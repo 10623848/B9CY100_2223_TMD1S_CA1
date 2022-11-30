@@ -1,0 +1,26 @@
+{
+  "name": "b9cy100_2223_tmd1s_ca1",
+  "version": "1.0.0",
+  "description": "Name: Haseeb Ahmed Khan \r Roll no: 10622774 \r I am doing Backend api handling",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/10623848/B9CY100_2223_TMD1S_CA1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/10623848/B9CY100_2223_TMD1S_CA1/issues"
+  },
+  "homepage": "https://github.com/10623848/B9CY100_2223_TMD1S_CA1#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "mssql": "^9.0.1"
+  }
+}
