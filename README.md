@@ -2,3 +2,5 @@
 Name: Haseeb Ahmed Khan 
 Roll no: 10622774 
 I am doing Backend api handling 
+
+My name is Hafiz Muhammad Touseef : 10626327, I will be mostly contributing in frontend part of the project.
