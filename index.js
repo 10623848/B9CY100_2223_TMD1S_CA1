@@ -1,62 +1,86 @@
-const express = require("express")
-const sql = require('mssql')
-const app = express();
-const xml = require('xml')
+var express = require("express")
+var fileUpload = require('express-fileupload');
+var bodyParser = require('body-parser')
 
-const MERCHANT_TABLE = 'Merchants'
+var app = express();
 
-var db_config = {
-	user : 'user',
-	Password : 'password123',
-	server : 'localhost',
-	port : 5000,
-	database : 'EcomDB'
-}
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.raw());
+app.use(fileUpload());
 
-//Params
-//business_name
-//contant_no
-app.post("/addMember", (req, res) => {
-	
-	sql.connect(db_config, function(err) {
-		if (err) console.log(err);
-		
-		var request = sql.Request();
-		
-		request.query('create table ' + MERCHANT_TABLE + '(id int, business_name varchar(225), contant_no varchar(225))', function (err, recordset) {
-			if (err) {
-				console.log(err);
-				res.send('Somethins went wrong!!! Please try again!!!');
-				return;
-			}
-			const id = '1';
-			const business_name = req.body.business_name;
-			const contact_no = req.body.contact_no;
-			
-			request.query('insert into ' + MERCHANT_TABLE + 'values (' + id + ',' + business_name + ',' + contact_no + ')', function (err, recordset) {
-				res.send('Member added successfully!!!')
-				return;
-			})
-			
-		})
-	})
-	
+var cors = require('cors');
+var router = express.Router();
+var jsonParser = bodyParser.json();
+
+
+const dboperations = require('./dboperations')
+
+app.use(cors());
+app.use("/api",router);
+
+router.use((request, response, next) => {
+next();
+});
+
+router.route('/addEmailTemplate', jsonParser).post((request, response) => {
+
+let body = request.body;
+dboperations.addEmailTemplate(1, body.business_name, body.contact_no).then(result => {
+response.json(result);
 })
 
-app.get('/getMembers', (req, res) => {
-	var request = sql.Request();
-	request.query('select * from ' + MERCHANT_TABLE, function (err, recordset) {
-		if (err) {
-			res.send('Something went wrong!!!')
-			return;
-		}
-		
-		res.set('Content-Type', 'text/xml');
-		res.send(xml(recordset));
-	})
+});
+
+//Get deatails of Employees
+router.route('/getEmployees').get((request, response) => {
+
+dboperations.getEmployeeDetails()
+.then(result => {
+response.json(result);
 })
 
+});
 
-app.listen(5000, () => {
-	console.log
+
+//Get phishing report
+router.route('/getPhishingReport').get((request, response) => {
+
+dboperations.getPhishingReport()
+.then(result => {
+response.json(result);
+})
+
+});
+
+//Add Employee
+router.route('/addEmployee').post((request, response) => {
+
+let body = request.body;
+
+console.log(body)
+
+dboperations.addEmployee(1, body.name, body.email, body.mob)
+.then(result => {
+response.json(result);
+})
+
+});
+
+//Get email template
+router.route('/getEmailTemplate').get((request, response) => {
+
+let body = request.body;
+
+console.log(body)
+
+dboperations.getEmailTemplate()
+.then(result => {
+response.json(result);
+})
+
+});
+
+app.listen(process.env.PORT || 5000, () => {
+console.log
 })
