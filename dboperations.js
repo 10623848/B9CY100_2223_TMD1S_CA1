@@ -1,6 +1,5 @@
 var config = require('./dbconfig');
 var sql = require('mssql/msnodesqlv8')
-let mysql = require('mysql');
 var Connection = require('tedious').Connection;
 var Request = require('tedious').Request;
 
@@ -9,7 +8,7 @@ const EMPLOYEE_EPOC_TABLE = 'employe_spoc';
 
 const staticJSON = require('./StaticJSONResponces')
 
-const staticMode = false;
+const staticMode = true;
 
 
 /*

@@ -1,5 +1,5 @@
-const BASE_URL = "http://54.165.182.92:5000"
-const BASE_URL_PAGE = "http://54.165.182.92:3000"
+const BASE_URL = "http://localhost:5000"
+const BASE_URL_PAGE = "http://localhost:3000"
 const API = "/api"
 
 //Format endpoints = BASE_URL + API(versions for later) + route
