@@ -7,16 +7,9 @@ const EMAIL_TEMPLATE_TABLE = 'emailtemplate';
 const EMPLOYEE_EPOC_TABLE = 'employe_spoc';
 
 const staticJSON = require('./StaticJSONResponces')
-
+//Static mode to test if all front-end codes are working properly if there are no data in the database
 const staticMode = true;
 
-
-/*
-create table emailtemplate(templateid int primary key, templatesubject varchar(255));
-insert into emailtemplate values (01, 'email')
-Select * from
-
-*/
 async function addEmailTemplate(clientId, contact_no) {
 try {
 let pool = await sql.connect(config);

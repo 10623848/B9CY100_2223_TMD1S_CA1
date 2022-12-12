@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "0407248f-8d8b-4e20-be51-1b8ecdcd1e4d",
+		"name": "Phishing-Reporter-APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5511502"
+	},
+	"item": [
+		{
+			"name": "Add email template",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "business_name",
+							"value": "LIDL",
+							"type": "text"
+						},
+						{
+							"key": "contact_no",
+							"value": "+919748933423",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "<Test Subject>",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "<Test Body>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/addEmailTemp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"addEmailTemp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee's list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/getEmployees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getEmployees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Phishing report list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/getPhishingReport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getPhishingReport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ss",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aa@g.c",
+							"type": "text"
+						},
+						{
+							"key": "mob",
+							"value": "+24465654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/addEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"addEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Email template list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/getEmailTemplate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getEmailTemplate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
