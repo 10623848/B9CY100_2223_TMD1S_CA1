@@ -120,6 +120,9 @@ Contribution report: -
 -	Created the page using react -- Fishing.jsx
 -	Inserted animations in FishingReport.jsx -- FishingReport.css
 -	Created the page using react --FishingReport.jsx
+![Email-Template](https://user-images.githubusercontent.com/118562423/209243708-e35c28c4-ec59-4193-966a-c18c1ec3cf58.png)
+![User-Details](https://user-images.githubusercontent.com/118562423/209243793-a6bbff27-b654-4643-a333-45540e758fe8.png)
+
 
 
 @Haseeb
@@ -129,6 +132,8 @@ Contribution report: -
 -	URLManager.js 
 -	UserDetails.css 
 -	UserDetail.jsx
+![Login-Page](https://user-images.githubusercontent.com/118562423/209243749-ba2e2e6d-71ad-4e07-9b2a-4718e05ff4aa.png)
+
 
 
 @Saqlain
@@ -137,14 +142,24 @@ Contribution report: -
 -	Bug fixes
 -	Complete project setup
 
+![Project-Codes-Files](https://user-images.githubusercontent.com/118562423/209243634-1715bb76-dba7-46f5-8bc0-afd63e66ff38.png)
+![URL-Manager](https://user-images.githubusercontent.com/118562423/209243899-0b3260b5-151e-48e3-a6f5-a9874ed8624c.png)
+
 
 @Touseef
 -	MSSQL Database server setup
 -	SQL Queries to be implemented on backend
+![DB-Operations](https://user-images.githubusercontent.com/118562423/209243591-b4679c0b-63a8-4985-b1f5-3e9e231e67aa.png)
+
 
 
 @Vinay
 -	APIs on backend – addEmailTemplate, getEmailTemplate, getPhishingReport, addEmployee, getEmployee
+
+![Postman API Test](https://user-images.githubusercontent.com/118562423/209243503-f6e69264-c72a-43d3-9347-b476d042cc2f.png)
+![APIS](https://user-images.githubusercontent.com/118562423/209243570-e8d447ef-c896-4578-a189-c654c142d46e.png)
+
+
 
 Conclusion:
 PhishReporter is a valuable tool for helping individuals and organizations protect themselves against phishing attacks. By providing a simple and effective way to analyse suspicious emails and websites, PhishReporter helps to stop the spread of phishing attacks and prevent further harm. If you or your organization is concerned about the risk of phishing attacks, consider using a tool like PhishReporter to help protect yourself and others.
