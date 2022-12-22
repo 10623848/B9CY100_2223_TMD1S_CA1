@@ -1,5 +1,5 @@
 # B9CY100_2223_TMD1S_CA1
-# Project Name: IP BlackListing 
+# Project Name: Phishing Reporter
 Name: Haseeb Ahmed Khan 
 Roll no: 10622774 
 I am doing Backend api handling 
