@@ -111,6 +111,7 @@ g.	create table report(reportid int primary key, phishing_status varchar(255), c
 5.	The username, password, server and port is supposed to be changed according to your machine. The file under /Project/dbconfig.js needs to be altered.
 
 Contribution report: -
+
 @Anant
 -	Inserted animations in ADDEmployee.jsx -- AddEmployee.css
 -	Created the page using react -- AddEmployee.jsx
@@ -119,6 +120,8 @@ Contribution report: -
 -	Created the page using react -- Fishing.jsx
 -	Inserted animations in FishingReport.jsx -- FishingReport.css
 -	Created the page using react --FishingReport.jsx
+
+
 @Haseeb
 -	login.css 
 -	login.jsx 
@@ -127,14 +130,19 @@ Contribution report: -
 -	UserDetails.css 
 -	UserDetail.jsx
 
+
 @Saqlain
 -	Testing codes
 -	Worked with frontend Navigation bar
 -	Bug fixes
 -	Complete project setup
+
+
 @Touseef
 -	MSSQL Database server setup
 -	SQL Queries to be implemented on backend
+
+
 @Vinay
 -	APIs on backend – addEmailTemplate, getEmailTemplate, getPhishingReport, addEmployee, getEmployee
 
