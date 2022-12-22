@@ -143,7 +143,8 @@ Contribution report: -
 -	Complete project setup
 
 ![Project-Codes-Files](https://user-images.githubusercontent.com/118562423/209243634-1715bb76-dba7-46f5-8bc0-afd63e66ff38.png)
-![URL-Manager](https://user-images.githubusercontent.com/118562423/209243899-0b3260b5-151e-48e3-a6f5-a9874ed8624c.png)
+![Postman API Test](https://user-images.githubusercontent.com/118562423/209243503-f6e69264-c72a-43d3-9347-b476d042cc2f.png)
+
 
 
 @Touseef
@@ -156,7 +157,7 @@ Contribution report: -
 @Vinay
 -	APIs on backend – addEmailTemplate, getEmailTemplate, getPhishingReport, addEmployee, getEmployee
 
-![Postman API Test](https://user-images.githubusercontent.com/118562423/209243503-f6e69264-c72a-43d3-9347-b476d042cc2f.png)
+![URL-Manager](https://user-images.githubusercontent.com/118562423/209243899-0b3260b5-151e-48e3-a6f5-a9874ed8624c.png)
 ![APIS](https://user-images.githubusercontent.com/118562423/209243570-e8d447ef-c896-4578-a189-c654c142d46e.png)
 
 
