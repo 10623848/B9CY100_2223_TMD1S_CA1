@@ -2,15 +2,15 @@
 # Project Name: Phishing Reporter
 Name: Haseeb Ahmed Khan 
 Roll no: 10622774 
-I am doing Backend api handling 
+Work Assigned to me: Designing Front End
 
-My name is Hafiz Muhammad Touseef : 10626327, I will be mostly contributing in frontend part of the project.
+My name is Hafiz Muhammad Touseef : 10626327, I will be handling backend database queries.
 
-I am Saqlain Shohrab, Student ID : 10623848. I will work with the backend services needed in the project. Mostly with database pull, push and update
+I am Saqlain Shohrab, Student ID : 10623848. I will work with the backend services needed in the project. Mostly with database pull, push, update and error handling.
 
 Name: Vinay Nair
 Student ID: 10609822
-Work Assigned to me: Front end
+Work Assigned to me: Backend API Handling
 
 
 Name : Anant Prajapati
