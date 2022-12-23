@@ -37,22 +37,22 @@ Architecture:
 The architecture clearly indicates the flow is when a user is surfing our website, the user hits and frontend server based on React which renders the template of the UI created and to show all the data, an API is called from the backend server based on Node.js and it pulls data from our MSSQL DB, finally the exact data with all required data is rendered over the browser which the user is using.
 
 Technologies and library used:
-1.	Backend Technologies
-a.	Node.js
-b.	Exprees
-c.	Mssql
-d.	Cors
-e.	Tedious
-2.	Frontend Technologies
-a.	React.js
-b.	Node.js
-c.	HTML
-d.	CSS
-3.	Database
-a.	SQL
-4.	Version Control and Testing Technologies
-a.	Git
-b.	Postman
+1.	Backend Technologies:
+ a.	Node.js
+ b.	Exprees
+ c.	Mssql
+ d.	Cors
+ e.	Tedious
+2.	Frontend Technologies:
+ a.	React.js
+ b.	Node.js
+ c.	HTML
+ d.	CSS
+3.	Database:
+ a.	SQL
+4.	Version Control and Testing Technologies:
+ a.	Git
+ b.	Postman
 
 Project Structure:
 After cloning the project, we can see three folder - Project, Screenshots, Testing along with a readme file. When we move under the project folder, we have multiple files and folders which is a collection of backend and frontend server files. The entry point of the backend server is index.js. We have a directory named as phishing, which contains all the frontend server codes and the entry point of this server is src/index.js.
@@ -90,13 +90,13 @@ Download or install it from https://nodejs.org/en/download/ according to your OS
 Command – **npm install react-scripts**
 4.	Install MSSQL
 Install MSSQL server management studio and set up a server with a database named as ‘Master_db’ and create the tables as mentioned. The SQL queries to create all DB elements are mentioned below
--	create database if not exists Master_db
--	create table client(clientid int primary key, clientname varchar(255), license varchar(255), price decimal)
--	create table employe_spoc(employeid int primary key, employename varchar(255), mob varchar(255), email varchar(255))
--	create table phishing_type(phishingid int primary key, phishingname varchar(255), tempname varchar(255), detailstocapture varchar(255))
--	create table landingtemplate(landingid int primary key, credtocapture varchar(255), clientlogo varchar(255))
--	create table backend_database(backendid int primary key,is_phished varchar(255), credentials_captured varchar(255),clientid int, phishingid int, FOREIGN KE (clientid) REFERENCES client(clientid), FOREIGN KEY (phishingid) REFERENCES phishing_type(phishingid))
--	create table report(reportid int primary key, phishing_status varchar(255), clientid int,FOREIGN KEY (clientid) REFERENCES client(clientid));
+ -	create database if not exists Master_db
+ -	create table client(clientid int primary key, clientname varchar(255), license varchar(255), price decimal)
+ -	create table employe_spoc(employeid int primary key, employename varchar(255), mob varchar(255), email varchar(255))
+ -	create table phishing_type(phishingid int primary key, phishingname varchar(255), tempname varchar(255), detailstocapture varchar(255))
+ -	create table landingtemplate(landingid int primary key, credtocapture varchar(255), clientlogo varchar(255))
+ -	create table backend_database(backendid int primary key,is_phished varchar(255), credentials_captured varchar(255),clientid int, phishingid int, FOREIGN KEY (clientid) REFERENCES client(clientid), FOREIGN KEY (phishingid) REFERENCES phishing_type(phishingid))
+ -	create table report(reportid int primary key, phishing_status varchar(255), clientid int,FOREIGN KEY (clientid) REFERENCES client(clientid));
 
 5.	The username, password, server and port is supposed to be changed according to your machine. The file under /Project/dbconfig.js needs to be altered.
 
