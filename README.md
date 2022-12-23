@@ -1,5 +1,5 @@
 # B9CY100_2223_TMD1S_CA1
-# Project Name: Phishing Reporter
+## Phishing Reporter
 
 ### Contributers
 | **Name** | **Student ID** | **Work Assigned** |
@@ -10,10 +10,10 @@
 | Saqlain Shohrab | 10623848 | Server Setup<br />Testing API + Frontend<br />Develop Frontend |
 | Vinay Nair | 10609822 | Develop API |
 
+Public Git repository : https://github.com/10623848/B9CY100_2223_TMD1S_CA1
 
 
-# Introduction
-## Phishing Reporter
+## Introduction
 
 ### Introduction to Phishing:
 Phishing is a type of cybercrime in which attackers use fraudulent emails or websites to trick individuals into divulging sensitive information such as login credentials or financial information. These attacks can have serious consequences, as they can lead to identity theft, financial losses, and damage to an organization's reputation.  We understood that there’s a need to educate employees coming from a non-IT background on how dangerous a phishing email can be since they have no understanding on how a phishing email looks and what harm a single click on a wrong email can make company lose millions of money and their sensitive data.
@@ -88,7 +88,7 @@ Install MSSQL server management studio and set up a server with a database named
 
 5.	The username, password, server and port is supposed to be changed according to your machine. The file under /Project/dbconfig.js needs to be altered.
 
-Contribution report: -
+## Contribution report: -
 
 @Anant
 -	Inserted animations in ADDEmployee.jsx -- AddEmployee.css
