@@ -17,9 +17,6 @@ Name : Anant Prajapati
 Student ID: 10622674
 Work Assigned : Frontend
 
-Testing image addition
-![alt text](https://github.com/10623848/B9CY100_2223_TMD1S_CA1/blob/main/Screenshots/DB-Operations.png?raw=true)
-
 
 # Introduction
 Phishing Reporter
