@@ -1,19 +1,19 @@
 # B9CY100_2223_TMD1S_CA1
 # Project Name: Phishing Reporter
 
-###Contributers
-| Name | Student ID | Worked Assigned |
+### Contributers
+| **Name** | **Student ID** | **Work Assigned** |
 |:----------------|:----------------:|:----------------|
 | Anant Prajapati | 10622674 | Design Frontend |
 | Hafiz Muhammad Touseef | 10626327 | Database Setup<br />Database Queries |
-| Haseeb Ahmed Khan | 10622774 | Designing Frontend |
-| Saqlain Shohrab | 10623848 | Server Setup<br />Testing<br />Frontend |
+| Haseeb Ahmed Khan | 10622774 | Design Frontend |
+| Saqlain Shohrab | 10623848 | Server Setup<br />Testing API + Frontend<br />Develop Frontend |
 | Vinay Nair | 10609822 | Develop API |
 
 
 
 # Introduction
-Phishing Reporter
+## Phishing Reporter
 
 ### Introduction to Phishing:
 Phishing is a type of cybercrime in which attackers use fraudulent emails or websites to trick individuals into divulging sensitive information such as login credentials or financial information. These attacks can have serious consequences, as they can lead to identity theft, financial losses, and damage to an organization's reputation.  We understood that there’s a need to educate employees coming from a non-IT background on how dangerous a phishing email can be since they have no understanding on how a phishing email looks and what harm a single click on a wrong email can make company lose millions of money and their sensitive data.
