@@ -89,7 +89,14 @@ Download or install it from https://nodejs.org/en/download/ according to your OS
 3.	Set up React
 Command – ‘npm install react-scripts’
 4.	Install MSSQL
-Install MSSQL server management studio and set up a server with a database named as ‘Master_db’ and create the tables as mentioned. The SQL queries to create all DB elements are mentioned below<br \>a.	create database if not exists Master_db;<br \>b.	create table client(clientid int primary key, clientname varchar(255), license varchar(255), price decimal);<br \>c.	create table employe_spoc(employeid int primary key, employename varchar(255), mob varchar(255), email varchar(255));<br \>d.	create table phishing_type(phishingid int primary key, phishingname varchar(255), tempname varchar(255), detailstocapture varchar(255));<br \>e.	create table landingtemplate(landingid int primary key, credtocapture varchar(255), clientlogo varchar(255));<br \>f.	create table backend_database(backendid int primary key,is_phished varchar(255), credentials_captured varchar(255),clientid int, phishingid int, FOREIGN KE (clientid) REFERENCES client(clientid), FOREIGN KEY (phishingid) REFERENCES phishing_type(phishingid));<br \>g.	create table report(reportid int primary key, phishing_status varchar(255), clientid int,FOREIGN KEY (clientid) REFERENCES client(clientid));
+Install MSSQL server management studio and set up a server with a database named as ‘Master_db’ and create the tables as mentioned. The SQL queries to create all DB elements are mentioned below
+a.	create database if not exists Master_db
+b.	create table client(clientid int primary key, clientname varchar(255), license varchar(255), price decimal)
+c.	create table employe_spoc(employeid int primary key, employename varchar(255), mob varchar(255), email varchar(255))
+d.	create table phishing_type(phishingid int primary key, phishingname varchar(255), tempname varchar(255), detailstocapture varchar(255))
+e.	create table landingtemplate(landingid int primary key, credtocapture varchar(255), clientlogo varchar(255))
+f.	create table backend_database(backendid int primary key,is_phished varchar(255), credentials_captured varchar(255),clientid int, phishingid int, FOREIGN KE (clientid) REFERENCES client(clientid), FOREIGN KEY (phishingid) REFERENCES phishing_type(phishingid))
+g.	create table report(reportid int primary key, phishing_status varchar(255), clientid int,FOREIGN KEY (clientid) REFERENCES client(clientid));
 
 5.	The username, password, server and port is supposed to be changed according to your machine. The file under /Project/dbconfig.js needs to be altered.
 
@@ -157,33 +164,71 @@ PhishReporter is a valuable tool for helping individuals and organizations prote
 # Project setup commands:-
 ## The project is divided in 3 different part: 
 
-Backend, Frontend and Database.<br \>For version control we have used Git Bash, GitHub Desktop and GitHub.
+Backend, Frontend and Database.
+For version control we have used Git Bash, GitHub Desktop and GitHub.
 
 ### Backend Commands: Node.js
-Install Node js on your pc.<br \>Download from https://nodejs.org/en/download/ and Install according to your OS
+Install Node js on your pc.
+Download from https://nodejs.org/en/download/ and Install according to your OS
 
-Initialize your project<br \>**npm init  -y** '-y' is used to start with default package values.<br \><br \>Create all necessary file and write codes according to project's requirement
+Initialize your project
+**npm init  -y** '-y' is used to start with default package values.
 
-Install dependencies if any<br \>**npm install** or **npm install <library name>** for a perticular library.<br \><br \>Development tool *nodemon* is also used to see quick affect while development.
+Create all necessary file and write codes according to project's requirement
 
-To run at development use **npm run dev**<br \>To run on production use **node index.js**
+Install dependencies if any
+**npm install** or **npm install** *library name* for a perticular library.
+
+Development tool *nodemon* is also used to see quick affect while development.
+
+To run at development use **npm run dev**
+
+To run on production use **node index.js**
 
 
 ### Frontend commands: Node.js, React, CSS, HTML
 
-Initialize react app<br \>**npx create-react-app <app name>**
+Initialize react app
+**npx create-react-app ** *app name*
 
-Install react script<br \>**npm install react-scripts** <br \> This is required only if you are cloning the application and you have not initialized the app.
+Install react script
+**npm install react-scripts**
+This is required only if you are cloning the application and you have not initialized the app.
 
-Install all dependencies or single dependencies same as done for Backend.<br \><br \>Start the server with **npm start**
+Install all dependencies or single dependencies same as done for Backend.
+
+Start the server with **npm start**
 
 
 
 ### Database commands: SQL
 
-To create database<br \>**CREATE DATABASE <Database name>**<br \><br \>To create tables with primary key(s)<br \>**CREATE TABLE *Table name* (ColumnName1 Datatype1, ColumnName2 Datatype2 , PRIMARY KEY(One or more column))**<br \><br \>To insert values to tables<br \>**Insert into *Table name* values(Columnvalue1, columnvalue1, )**<br \><br \>To pull data from table<br \>**Select \* from Table name**
+To create database
+**CREATE DATABASE** *Database name*
+ 
+To create tables with primary key(s)
+**CREATE TABLE** *Table Name* **(ColumnName1 Datatype1, ColumnName2 Datatype2 , PRIMARY KEY(One or more column))**
+ 
+ To insert values to tables
+ **Insert into** *Table name* **values(Columnvalue1, columnvalue1, )**
+ 
+ To pull data from table
+ **Select \* from Table name**
 
 
 ### Git commands:
 
-To check all the commits<br \>**git log**<br \><br \>To check the the status of what all changed locally before a commit<br \>**git status**<br \><br \>To add all the files for commiting and pushing it to repository<br \>**git add .**<br \><br \>To commit what all we are pushing to the repo<br \>**git commit -m "<Commit message>"**<br \><br \>To push all local changes to repository<br \>**git push origin <Branch name>**
+ To check all the commits
+ **git log**
+ 
+ To check the the status of what all changed locally before a commit
+ **git status**
+ 
+ To add all the files for commiting and pushing it to repository
+ **git add .**
+ 
+ To commit what all we are pushing to the repo
+ **git commit -m "<Commit message>"**
+ 
+ To push all local changes to repository
+ **git push origin** *Branch name*
