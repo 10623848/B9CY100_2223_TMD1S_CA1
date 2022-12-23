@@ -82,21 +82,21 @@ I use the node.js to connect the APIs with the database and use the SQL tom retr
 Project Deployement:
 To deploy this project, simple and few steps needs to be followed.
 1.	Setup git
-There are 2 ways on getting the project, install git bash or git cli and clone it with from the URL provided.
-Command – ‘git clone https://github.com/10623848/B9CY100_2223_TMD1S_CA1’
+There are 2 ways on getting the project, install git bash or git cli and clone it with from the URL provided, or direct zip download from git URL
+Command – **git clone https://github.com/10623848/B9CY100_2223_TMD1S_CA1** 
 2.	Setup Node.js
 Download or install it from https://nodejs.org/en/download/ according to your OS
 3.	Set up React
-Command – ‘npm install react-scripts’
+Command – **npm install react-scripts**
 4.	Install MSSQL
 Install MSSQL server management studio and set up a server with a database named as ‘Master_db’ and create the tables as mentioned. The SQL queries to create all DB elements are mentioned below
-a.	create database if not exists Master_db
-b.	create table client(clientid int primary key, clientname varchar(255), license varchar(255), price decimal)
-c.	create table employe_spoc(employeid int primary key, employename varchar(255), mob varchar(255), email varchar(255))
-d.	create table phishing_type(phishingid int primary key, phishingname varchar(255), tempname varchar(255), detailstocapture varchar(255))
-e.	create table landingtemplate(landingid int primary key, credtocapture varchar(255), clientlogo varchar(255))
-f.	create table backend_database(backendid int primary key,is_phished varchar(255), credentials_captured varchar(255),clientid int, phishingid int, FOREIGN KE (clientid) REFERENCES client(clientid), FOREIGN KEY (phishingid) REFERENCES phishing_type(phishingid))
-g.	create table report(reportid int primary key, phishing_status varchar(255), clientid int,FOREIGN KEY (clientid) REFERENCES client(clientid));
+-	create database if not exists Master_db
+-	create table client(clientid int primary key, clientname varchar(255), license varchar(255), price decimal)
+-	create table employe_spoc(employeid int primary key, employename varchar(255), mob varchar(255), email varchar(255))
+-	create table phishing_type(phishingid int primary key, phishingname varchar(255), tempname varchar(255), detailstocapture varchar(255))
+-	create table landingtemplate(landingid int primary key, credtocapture varchar(255), clientlogo varchar(255))
+-	create table backend_database(backendid int primary key,is_phished varchar(255), credentials_captured varchar(255),clientid int, phishingid int, FOREIGN KE (clientid) REFERENCES client(clientid), FOREIGN KEY (phishingid) REFERENCES phishing_type(phishingid))
+-	create table report(reportid int primary key, phishing_status varchar(255), clientid int,FOREIGN KEY (clientid) REFERENCES client(clientid));
 
 5.	The username, password, server and port is supposed to be changed according to your machine. The file under /Project/dbconfig.js needs to be altered.
 
@@ -189,7 +189,7 @@ To run on production use **node index.js**
 ### Frontend commands: Node.js, React, CSS, HTML
 
 Initialize react app
-**npx create-react-app ** *app name*
+**npx create-react-app** *app name*
 
 Install react script
 **npm install react-scripts**
