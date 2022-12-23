@@ -1,21 +1,15 @@
 # B9CY100_2223_TMD1S_CA1
 # Project Name: Phishing Reporter
-Name: Haseeb Ahmed Khan 
-Roll no: 10622774 
-Work Assigned to me: Designing Front End
 
-My name is Hafiz Muhammad Touseef : 10626327, I will be handling backend database queries.
+###Contributers
+| Name | Student ID | Worked Assigned |
+|:----------------|:----------------:|:----------------|
+| Anant Prajapati | 10622674 | Design Frontend |
+| Hafiz Muhammad Touseef | 10626327 | Database Setup<br />Database Queries |
+| Haseeb Ahmed Khan | 10622774 | Designing Frontend |
+| Saqlain Shohrab | 10623848 | Server Setup<br />Testing<br />Frontend |
+| Vinay Nair | 10609822 | Develop API |
 
-I am Saqlain Shohrab, Student ID : 10623848. I will work with the backend services needed in the project. Mostly with database pull, push, update and error handling.
-
-Name: Vinay Nair
-Student ID: 10609822
-Work Assigned to me: Backend API Handling
-
-
-Name : Anant Prajapati
-Student ID: 10622674
-Work Assigned : Frontend
 
 
 # Introduction
@@ -36,8 +30,7 @@ To make the our work, we have created APIs to render data over a react based fro
 5.	getEmployee – This gives us all the employee we have in our server and we could filter it with company keyword.
 
 Architecture:
-User			Node.js(React)		Node Backend		MSSQL DB
-![image](https://user-images.githubusercontent.com/118562423/209240969-55ecb331-cd50-411d-829d-2062b8e718a8.png)
+![Architecture](https://github.com/10623848/B9CY100_2223_TMD1S_CA1/blob/main/Screenshots/Architecture.png?raw=true)
 
  
 
@@ -102,7 +95,7 @@ b.	create table client(clientid int primary key, clientname varchar(255), licens
 c.	create table employe_spoc(employeid int primary key, employename varchar(255), mob varchar(255), email varchar(255));
 d.	create table phishing_type(phishingid int primary key, phishingname varchar(255), tempname varchar(255), detailstocapture varchar(255));
 e.	create table landingtemplate(landingid int primary key, credtocapture varchar(255), clientlogo varchar(255));
-f.	create table backend_database(backendid int primary key,is_phished varchar(255), credentials_captured varchar(255),clientid int, phishingid int, FOREIGN KEY (clientid) REFERENCES client(clientid), FOREIGN KEY (phishingid) REFERENCES phishing_type(phishingid));
+f.	create table backend_database(backendid int primary key,is_phished varchar(255), credentials_captured varchar(255),clientid int, phishingid int, FOREIGN KE (clientid) REFERENCES client(clientid), FOREIGN KEY (phishingid) REFERENCES phishing_type(phishingid));
 g.	create table report(reportid int primary key, phishing_status varchar(255), clientid int,FOREIGN KEY (clientid) REFERENCES client(clientid));
 
 5.	The username, password, server and port is supposed to be changed according to your machine. The file under /Project/dbconfig.js needs to be altered.
@@ -172,7 +165,7 @@ PhishReporter is a valuable tool for helping individuals and organizations prote
 ## The project is divided in 3 different part: 
 
 Backend, Frontend and Database.
-For version control we have used Git Bash and GitHub.
+For version control we have used Git Bash, GitHub Desktop and GitHub.
 
 ### Backend Commands: Node.js
 Install Node js on your pc
