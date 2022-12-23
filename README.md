@@ -37,22 +37,10 @@ Architecture:
 The architecture clearly indicates the flow is when a user is surfing our website, the user hits and frontend server based on React which renders the template of the UI created and to show all the data, an API is called from the backend server based on Node.js and it pulls data from our MSSQL DB, finally the exact data with all required data is rendered over the browser which the user is using.
 
 Technologies and library used:
-1.	Backend Technologies:
- a.	Node.js
- b.	Exprees
- c.	Mssql
- d.	Cors
- e.	Tedious
-2.	Frontend Technologies:
- a.	React.js
- b.	Node.js
- c.	HTML
- d.	CSS
-3.	Database:
- a.	SQL
-4.	Version Control and Testing Technologies:
- a.	Git
- b.	Postman
+1.	Backend Technologies: Node.js, Exprees, Mssql, Cors, Tedious
+2.	Frontend Technologies:	React.js, Node.js, HTML, CSS
+3.	Database: SQL
+4.	Version Control and Testing Technologies: Git, Postman
 
 Project Structure:
 After cloning the project, we can see three folder - Project, Screenshots, Testing along with a readme file. When we move under the project folder, we have multiple files and folders which is a collection of backend and frontend server files. The entry point of the backend server is index.js. We have a directory named as phishing, which contains all the frontend server codes and the entry point of this server is src/index.js.
@@ -116,19 +104,19 @@ Contribution report: -
 
 
 @Haseeb
--	login.css 
--	login.jsx 
--	templatecheck.js 
--	URLManager.js 
--	UserDetails.css 
--	UserDetail.jsx
+-	Styling Login Page -- Login.css 
+-	Created Login Page -- Login.jsx 
+-	Created -- Templatecheck.js 
+-	Created -- URLManager.js 
+-	Styling User Details -- UserDetails.css 
+-	Created -- UserDetail.jsx
 ![Login-Page](https://user-images.githubusercontent.com/118562423/209243749-ba2e2e6d-71ad-4e07-9b2a-4718e05ff4aa.png)
 
 
 
 @Saqlain
 -	Testing codes
--	Worked with frontend Navigation bar
+-	Worked with frontend Navigation
 -	Bug fixes
 -	Complete project setup
 
@@ -145,7 +133,7 @@ Contribution report: -
 
 
 @Vinay
--	APIs on backend – addEmailTemplate, getEmailTemplate, getPhishingReport, addEmployee, getEmployee
+-	Created APIs on Backend – addEmailTemplate, getEmailTemplate, getPhishingReport, addEmployee, getEmployee
 
 ![URL-Manager](https://user-images.githubusercontent.com/118562423/209243899-0b3260b5-151e-48e3-a6f5-a9874ed8624c.png)
 ![APIS](https://user-images.githubusercontent.com/118562423/209243570-e8d447ef-c896-4578-a189-c654c142d46e.png)
